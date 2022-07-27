@@ -13,6 +13,16 @@ function definirLivro(nome, ano, autor) {
 
 }
 
+function definirLivro2(nome, ano, autor) {
 
-let livro = definirLivro('O Senhor dos Anéis', 1954, 'J. R. R. Tolkien');
+    return {
+        nome: nome.toUpperCase(),
+        idade: new Date().getFullYear() - ano,
+        por: nome + ' por ' + autor
+    }
+
+}
+
+
+let livro = definirLivro2('O Senhor dos Anéis', 1954, 'J. R. R. Tolkien');
 console.log(livro.por);
