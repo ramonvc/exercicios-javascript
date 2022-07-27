@@ -15,4 +15,4 @@ function definirLivro(nome, ano, autor) {
 
 
 let livro = definirLivro('O Senhor dos Anéis', 1954, 'J. R. R. Tolkien');
-console.log(livro);
+console.log(livro.por);
