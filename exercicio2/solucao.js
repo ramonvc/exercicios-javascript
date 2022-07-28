@@ -14,4 +14,4 @@ function seguirMouse2(event) {
     circulo.style.left = event.x + "px";
 }
 
-window.addEventListener('mousemove', seguirMouse)
+window.addEventListener('mousemove', seguirMouse2)
