@@ -7,8 +7,13 @@ function galeriaTrocar(event) {
   principal.alt = clicada.alt;
 }
 
+function galeriaTrocar2(event) {
+  document.querySelector("#imagem-principal").src = event.currentTarget.src;
+  document.querySelector("#imagem-principal").alt = event.currentTarget.alt;
+}
+
 function galeriaClick(imagem) {
-  imagem.addEventListener("click", galeriaTrocar);
+  imagem.addEventListener("click", galeriaTrocar2);
 }
 
 imagens.forEach(galeriaClick);
