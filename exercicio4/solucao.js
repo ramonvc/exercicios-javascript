@@ -10,4 +10,11 @@ function ativarLink(link) {
     }
 }
 
-links.forEach(ativarLink);
+function ativarLink2(link) {
+    if(link.href === document.location.href) {
+        link.style.backgroundColor = "black";
+        link.style.color = "white";
+    }
+}
+
+links.forEach(ativarLink2);
